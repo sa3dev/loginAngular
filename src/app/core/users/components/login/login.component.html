@@ -1,0 +1,68 @@
+
+<!-- <div>
+	<h2>Login</h2>
+	<form (ngSubmit)="login()" [formGroup]="loginForm">
+		<div>
+			<label for="username">Prenom</label>
+			<input type="text" name="username" id="username" formControlName="username" > 
+		</div>
+ 
+		<div>
+			<label for="lastname">Nom</label>
+			<input type="text" name="lastname" id="lastname" formControlName="lastname" > 		
+		</div>
+
+		<input type="submit" value="valider">
+	</form>
+</div> -->
+
+<div>
+	<h2>Login</h2>
+	
+		<label for="username">Prenom</label>
+		<input type="text" name="username" id="username" [(ngModel)]="username" >
+
+		<label for="username">Prenom</label>
+		<input type="text" name="username" id="username" [(ngModel)]="lastname" >
+
+
+		<input type="submit" (click)="login()" value="Connection" >
+
+		<input type="submit" (click)="update()" value="Modifier">
+
+		<input type="submit" (click)="ajout()" value="Ajouter" >
+
+		<br><br>
+
+		<label>ID Modif</label> 
+		<input [(ngModel)]="idmodif">
+
+		<label>ID Supp</label> 
+		<input [(ngModel)]="idsupp">
+		<input type="submit" (click)="supprimer()" value="Supprimer">
+</div>
+
+
+
+<!-- <div>
+	<p>
+		<label>ID Modif</label> 
+		<input  [(ngModel)] = "idmodif">
+	</p>
+	<p>
+		<input type="submit" (click)="modifier()" value="Modifier" >
+	</p>
+
+	<p>
+		<input type="submit" (click)="ajout()" value="Ajout" >
+	</p>
+
+	<p>
+		<label>ID Supp</label> 
+		<input  [(ngModel)] = "idsupp">
+	</p>
+
+	<p>
+		<input type="submit"  value="Delete" >
+	</p>
+</div> -->

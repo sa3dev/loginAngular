@@ -1,0 +1,15 @@
+
+
+
+<div>
+	<span *ngIf="isLoaded"> Liste des users </span>
+	
+	<ul>
+		<li *ngFor="let user of ListUsers | async"> 
+			{{ user.first_name }} - {{ user.last_name }}
+		</li>
+	</ul>
+
+	<span *ngIf="!isLoaded">Chargement en cours..</span>
+
+</div>
